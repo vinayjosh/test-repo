@@ -3,10 +3,10 @@ import pandas as pd
 from redshift_connector import cursor
 import pandas_profiling as pp
 
-host = input('Please enter the local host')
-database = input('Please enter the database name')
-user = input('Enter user name')
-password = input('Enter the password')
+host = input('Please enter the local host: ')
+database = input('Please enter the database name: ')
+user = input('Enter user name: ')
+password = input('Enter the password: ')
 conn = redshift_connector.connect(
     host=host,
     database=database,
